@@ -1,26 +1,5 @@
 import { motion } from 'framer-motion';
-import { FaReact, FaNodeJs, FaGitAlt, FaFigma, FaJira, FaSlack } from 'react-icons/fa';
-import { SiTypescript, SiTailwindcss, SiNextdotjs, SiJavascript, SiSupabase } from 'react-icons/si';
-
-const skills = {
-    Frontend: [
-        { name: 'React', icon: FaReact, color: '#61DAFB' },
-        { name: 'TypeScript', icon: SiTypescript, color: '#3178C6' },
-        { name: 'Next.js', icon: SiNextdotjs, color: '#ffffff' },
-        { name: 'Tailwind CSS', icon: SiTailwindcss, color: '#06B6D4' },
-        { name: 'JavaScript', icon: SiJavascript, color: '#F7DF1E' },
-    ],
-    Backend: [
-        { name: 'Node.js', icon: FaNodeJs, color: '#339933' },
-        { name: 'Supabase', icon: SiSupabase, color: '#3f9933ff' },
-    ],
-    Tools: [
-        { name: 'Git', icon: FaGitAlt, color: '#F05032' },
-        { name: 'Figma', icon: FaFigma, color: '#f21ef2ff' },
-        { name: 'Jira', icon: FaJira, color: '#1e8ff2ff' },
-        { name: 'Slack', icon: FaSlack, color: '#481ef2ff' },
-    ],
-};
+import { SKILLS } from '../constants';
 
 const Skills = () => {
     return (
@@ -39,7 +18,7 @@ const Skills = () => {
             </motion.div>
 
             <div className="space-y-16">
-                {Object.entries(skills).map(([category, items], categoryIndex) => (
+                {Object.entries(SKILLS).map(([category, items], categoryIndex) => (
                     <motion.div
                         key={category}
                         initial={{ opacity: 0, y: 20 }}

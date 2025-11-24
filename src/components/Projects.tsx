@@ -1,62 +1,6 @@
 import { motion } from 'framer-motion';
 import { Github, ExternalLink, Folder } from 'lucide-react';
-
-const projects = [
-    {
-        id: 1,
-        title: 'Project Alpha',
-        description: 'A comprehensive dashboard for data visualization using React and D3.js. Features real-time data updates and customizable widgets.',
-        tech: ['React', 'D3.js', 'Firebase', 'Tailwind'],
-        github: '#',
-        demo: '#',
-        image: null, // Placeholder for now
-    },
-    {
-        id: 2,
-        title: 'E-commerce Platform',
-        description: 'Full-stack e-commerce solution with cart functionality, payment processing, and user authentication.',
-        tech: ['Next.js', 'Stripe', 'Supabase', 'TypeScript'],
-        github: '#',
-        demo: '#',
-        image: null,
-    },
-    {
-        id: 3,
-        title: 'Task Management App',
-        description: 'Collaborative task manager with drag-and-drop interface, team workspaces, and real-time notifications.',
-        tech: ['React', 'Redux', 'Node.js', 'Socket.io'],
-        github: '#',
-        demo: '#',
-        image: null,
-    },
-    {
-        id: 4,
-        title: 'Portfolio Website',
-        description: 'Modern developer portfolio built with React, Vite, and Framer Motion. Features a dark theme and smooth animations.',
-        tech: ['React', 'Vite', 'Framer Motion', 'Tailwind'],
-        github: '#',
-        demo: '#',
-        image: null,
-    },
-    {
-        id: 5,
-        title: 'Weather Dashboard',
-        description: 'Weather application providing detailed forecasts, historical data, and interactive maps using OpenWeatherMap API.',
-        tech: ['Vue.js', 'Chart.js', 'Leaflet', 'Sass'],
-        github: '#',
-        demo: '#',
-        image: null,
-    },
-    {
-        id: 6,
-        title: 'Chat Application',
-        description: 'Real-time chat application with private messaging, group channels, and file sharing capabilities.',
-        tech: ['React', 'Firebase', 'Material UI'],
-        github: '#',
-        demo: '#',
-        image: null,
-    },
-];
+import { PROJECTS } from '../constants';
 
 const Projects = () => {
     return (
@@ -75,7 +19,7 @@ const Projects = () => {
             </motion.div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {projects.map((project, index) => (
+                {PROJECTS.map((project, index) => (
                     <motion.div
                         key={project.id}
                         initial={{ opacity: 0, y: 20 }}

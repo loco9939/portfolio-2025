@@ -4,6 +4,8 @@ import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { cn } from '../utils/cn';
 
+import { NAV_LINKS } from '../constants';
+
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
@@ -16,14 +18,6 @@ const Navbar = () => {
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
-
-    const navLinks = [
-        { name: 'Home', path: '/' },
-        { name: 'About', path: '/about' },
-        { name: 'Skills', path: '/skills' },
-        { name: 'Projects', path: '/projects' },
-        { name: 'Contact', path: '/contact' },
-    ];
 
     return (
         <nav
@@ -39,7 +33,7 @@ const Navbar = () => {
 
                 {/* Desktop Menu */}
                 <div className="hidden md:flex space-x-8">
-                    {navLinks.map((link) => (
+                    {NAV_LINKS.map((link) => (
                         <Link
                             key={link.name}
                             to={link.path}
@@ -76,7 +70,7 @@ const Navbar = () => {
                             <X size={28} />
                         </button>
 
-                        {navLinks.map((link) => (
+                        {NAV_LINKS.map((link) => (
                             <Link
                                 key={link.name}
                                 to={link.path}

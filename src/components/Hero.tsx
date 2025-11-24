@@ -1,9 +1,10 @@
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { useTypewriter } from '../hooks/useTypewriter';
+import { HERO_WORDS } from '../constants';
 
 const Hero = () => {
-    const typedText = useTypewriter(['React', 'TypeScript', 'Next.js', 'Tailwind CSS']);
+    const typedText = useTypewriter(HERO_WORDS);
 
     return (
         <section className="min-h-screen flex flex-col justify-center px-6 md:px-20 max-w-6xl mx-auto pt-20">
