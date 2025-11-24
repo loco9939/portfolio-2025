@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { FaReact, FaNodeJs, FaGitAlt, FaFigma, FaJira, FaSlack } from 'react-icons/fa';
-import { SiTypescript, SiTailwindcss, SiNextdotjs, SiJavascript, SiPostgresql, SiSupabase } from 'react-icons/si';
+import { SiTypescript, SiTailwindcss, SiNextdotjs, SiJavascript, SiSupabase } from 'react-icons/si';
 
 const skills = {
     Frontend: [
