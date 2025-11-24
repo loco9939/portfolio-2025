@@ -31,7 +31,7 @@ const Projects = () => {
                     >
                         {/* Image Placeholder */}
                         <div className="h-48 bg-navy-lighter/50 flex items-center justify-center group-hover:bg-navy-lighter/70 transition-colors relative overflow-hidden">
-                            <Folder size={48} className="text-emerald opacity-50" />
+                            {project.image ? <img src={project.image} alt={project.title} className="w-full h-full object-cover" /> : <Folder size={48} className="text-emerald opacity-50" />}
                             <div className="absolute inset-0 bg-emerald/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                         </div>
 

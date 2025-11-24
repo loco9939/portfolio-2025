@@ -1,6 +1,13 @@
 import { FaReact, FaNodeJs, FaGitAlt, FaFigma, FaJira, FaSlack } from 'react-icons/fa';
 import { SiTypescript, SiTailwindcss, SiNextdotjs, SiJavascript, SiSupabase } from 'react-icons/si';
 
+import shiftSchedulerImg from '../assets/shift-scheduler-img.png';
+import dearMomentImg from '../assets/dear-moment-img.png';
+import brainrotImg from '../assets/brainrot-img.png'
+import recyclingImg from '../assets/recycling-img.png'
+import tossfolioImg from '../assets/tossfolio-img.png'
+import shifterImg from '../assets/shifter-img.png'
+
 export const NAV_LINKS = [
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
@@ -34,56 +41,56 @@ export const SKILLS = {
 export const PROJECTS = [
     {
         id: 1,
-        title: 'Project Alpha',
-        description: 'A comprehensive dashboard for data visualization using React and D3.js. Features real-time data updates and customizable widgets.',
-        tech: ['React', 'D3.js', 'Firebase', 'Tailwind'],
-        github: '#',
-        demo: '#',
-        image: null,
+        title: 'Shift Scheduler',
+        description: 'The optimal scheduling solution for shift workers. Set complex work conditions and easily complete schedules with a single button.',
+        tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Vercel'],
+        github: 'https://github.com/loco9939/shift-scheduler',
+        demo: 'https://shift-scheduler-one.vercel.app',
+        image: shiftSchedulerImg,
     },
     {
         id: 2,
-        title: 'E-commerce Platform',
-        description: 'Full-stack e-commerce solution with cart functionality, payment processing, and user authentication.',
-        tech: ['Next.js', 'Stripe', 'Supabase', 'TypeScript'],
-        github: '#',
-        demo: '#',
-        image: null,
+        title: 'Dear Moment',
+        description: 'A transparent platform that connects wedding snap clients and photographers.',
+        tech: ['Next.js', 'Shadcn-ui', 'TypeScript', 'Tailwind CSS', 'Vercel'],
+        github: 'https://github.com/loco9939/dear-moment-frontend',
+        demo: 'https://dear-moment.kro.kr',
+        image: dearMomentImg,
     },
     {
         id: 3,
-        title: 'Task Management App',
-        description: 'Collaborative task manager with drag-and-drop interface, team workspaces, and real-time notifications.',
-        tech: ['React', 'Redux', 'Node.js', 'Socket.io'],
-        github: '#',
-        demo: '#',
-        image: null,
+        title: 'Brainrot Type Test',
+        description: 'Personality type test based on the "Italian Brainlot AI meme',
+        tech: ['Next.js', 'Shadcn-ui', 'TypeScript', 'Tailwind CSS', 'Netlify'],
+        github: 'https://github.com/loco9939/brainrot-type',
+        demo: 'https://brainrot-type-test.netlify.app/',
+        image: brainrotImg,
     },
     {
         id: 4,
-        title: 'Portfolio Website',
-        description: 'Modern developer portfolio built with React, Vite, and Framer Motion. Features a dark theme and smooth animations.',
-        tech: ['React', 'Vite', 'Framer Motion', 'Tailwind'],
-        github: '#',
-        demo: '#',
-        image: null,
+        title: 'Tossfolio',
+        description: 'A personal asset management site with a Toss-like feel',
+        tech: ['React', 'Vite', 'Supabase', 'Zustand', 'Playwright', 'MSW', 'Styled-components'],
+        github: 'https://github.com/loco9939/tossfolio',
+        demo: 'https://tossfolio.vercel.app/landing',
+        image: tossfolioImg,
     },
     {
         id: 5,
-        title: 'Weather Dashboard',
-        description: 'Weather application providing detailed forecasts, historical data, and interactive maps using OpenWeatherMap API.',
-        tech: ['Vue.js', 'Chart.js', 'Leaflet', 'Sass'],
-        github: '#',
-        demo: '#',
-        image: null,
+        title: 'Recycling Quiz',
+        description: 'Recycling quiz app',
+        tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Vercel'],
+        github: 'https://github.com/loco9939/recycling-app',
+        demo: 'https://recycling-app-eta.vercel.app/',
+        image: recyclingImg,
     },
     {
         id: 6,
-        title: 'Chat Application',
-        description: 'Real-time chat application with private messaging, group channels, and file sharing capabilities.',
-        tech: ['React', 'Firebase', 'Material UI'],
-        github: '#',
-        demo: '#',
-        image: null,
+        title: 'Shifter',
+        description: 'A shift management application by Flutter',
+        tech: ['Flutter', 'Supabase'],
+        github: 'https://github.com/loco9939/shifter',
+        demo: 'https://play.google.com/store/apps/details?id=com.hifiju5047.shifter',
+        image: shifterImg,
     },
 ];
