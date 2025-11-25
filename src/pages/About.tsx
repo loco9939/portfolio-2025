@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
-import { Briefcase } from 'lucide-react';
-import { EXPERIENCES } from '../constants';
+import { Briefcase, Github, Linkedin, Mail, Globe } from 'lucide-react';
+import { EXPERIENCES, SOCIAL_LINKS } from '../constants';
 import profileImg from '../assets/profile.png'
 
 const About = () => {
@@ -13,7 +13,7 @@ const About = () => {
                 className="mb-12"
             >
                 <h2 className="text-3xl md:text-4xl font-bold text-slate-lighter mb-4 flex items-center gap-4">
-                    <span className="text-emerald">01.</span> About Me
+                    <span className="text-emerald">About Me</span>
                     <span className="h-px bg-navy-lighter flex-grow max-w-xs"></span>
                 </h2>
             </motion.div>
@@ -31,6 +31,24 @@ const About = () => {
                             <img src={profileImg} alt="Profile" className="w-full h-full object-contain" />
                         </div>
                         <div className="absolute inset-0 bg-emerald/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    </div>
+
+                    <div className="mt-4">
+                        <p className="text-slate-lighter text-center">Contact</p>
+                        <div className="flex justify-center gap-6 mt-4">
+                            <a href={SOCIAL_LINKS.github} target="_blank" rel="noopener noreferrer" className="text-slate hover:text-emerald transition-colors">
+                                <Github size={24} />
+                            </a>
+                            <a href={SOCIAL_LINKS.linkedin} target="_blank" rel="noopener noreferrer" className="text-slate hover:text-emerald transition-colors">
+                                <Linkedin size={24} />
+                            </a>
+                            <a href={SOCIAL_LINKS.email} className="text-slate hover:text-emerald transition-colors">
+                                <Mail size={24} />
+                            </a>
+                            <a href={SOCIAL_LINKS.blog} target="_blank" rel="noopener noreferrer" className="text-slate hover:text-emerald transition-colors">
+                                <Globe size={24} />
+                            </a>
+                        </div>
                     </div>
                 </motion.div>
 
