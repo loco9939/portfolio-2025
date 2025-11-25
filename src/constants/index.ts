@@ -94,3 +94,26 @@ export const PROJECTS = [
         image: shifterImg,
     },
 ];
+
+export const EXPERIENCES = [
+    {
+        title: 'WATA AI Corp. - Frontend Developer',
+        period: '2023.11 - Present',
+        description: 'Building a digital twin logistics management platform. Development of logistics platform admin service',
+    },
+    {
+        title: 'Quantus Corp. - Frontend Developer',
+        period: '2023.03 - 2023.09',
+        description: 'Quantitative investment and lecture platform development.',
+    },
+    {
+        title: 'Zerobase Frontend School 1st',
+        period: '2022.07 - 2022.12',
+        description: 'Learn markup design with web standards and accessibility in mind.\nIn-depth study of JavaScript concepts and principles.\nExperience code reviews, pair programming, and various project-based collaborations.',
+    },
+    {
+        title: 'Kangwon National University',
+        period: '2014.03 - 2019.08 (Graduated)',
+        description: 'Graduated from the Department of Regional Construction Engineering\nGPA 4.14/4.5, full scholarship, early graduation\nReceived the “Exemplary Award” from the President of Kangwon National University',
+    },
+];
