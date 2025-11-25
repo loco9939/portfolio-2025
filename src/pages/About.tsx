@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { User, Briefcase } from 'lucide-react';
+import { Briefcase } from 'lucide-react';
 import { EXPERIENCES } from '../constants';
 import profileImg from '../assets/profile.png'
 
